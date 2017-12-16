@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         {
             TextView dropped = (TextView)event.getLocalState();
             TextView dropTarget = (TextView) v;
-            if(text1.getText().toString().equals(text6.getText().toString())){
+            if(text5.getText().toString().equals(text1.getText().toString())|text5.getText().toString().equals(text2.getText().toString())|text5.getText().toString().equals(text3.getText().toString())|text5.getText().toString().equals(text4.getText().toString()) ){
                 dropTarget.setText(dropped.getText());
                 dropTarget.setTextColor(Color.rgb(255,192,203));
             }

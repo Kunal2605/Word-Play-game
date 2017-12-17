@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Wordplay</string>
     <string name="option_1">W</string>
-    <string name="option_2">o</string>
-    <string name="option_3">o</string>
-    <string name="option_4">d</string>
-    <string name="choice_1">o</string>
+    <string name="option_2">O</string>
+    <string name="option_3">O</string>
+    <string name="option_4">D</string>
+    <string name="choice_1">O</string>
     <string name="choice_2">W</string>
-    <string name="choice_3">o</string>
-    <string name="choice_4">d</string>
+    <string name="choice_3">O</string>
+    <string name="choice_4">D</string>
 
 </resources>

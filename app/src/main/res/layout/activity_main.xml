@@ -18,7 +18,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
-        android:gravity="center">
+        android:gravity="center"
+        >
 
         <TextView
             android:id="@+id/option_1"
@@ -26,14 +27,18 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:gravity="center"
+            android:layout_weight="1"
             android:text="@string/option_1"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/option_2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="@string/option_2"
@@ -44,6 +49,8 @@
             android:id="@+id/option_3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="@string/option_3"
@@ -54,6 +61,8 @@
             android:id="@+id/option_4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="@string/option_4"
@@ -64,13 +73,15 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="40dp"
         android:gravity="center">
 
         <TextView
             android:id="@+id/choice_1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="@string/choice_1"
@@ -81,6 +92,8 @@
             android:id="@+id/choice_2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="@string/choice_2"
@@ -91,6 +104,8 @@
             android:id="@+id/choice_3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="@string/choice_3"
@@ -101,6 +116,8 @@
             android:id="@+id/choice_4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="@string/choice_4"

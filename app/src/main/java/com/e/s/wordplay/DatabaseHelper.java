@@ -27,21 +27,39 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_TABLE = "CREATE TABLE "+TABLE_NAME+"("+KEY_ID + " INTEGER PRIMARY KEY, "+ KEY_Word
-                +" TEXT)";
+        String CREATE_TABLE = "CREATE TABLE "+TABLE_NAME+"("+KEY_ID + " INTEGER PRIMARY KEY, "+ KEY_WORD
+                +" TEXT, "+")";
         db.execSQL(CREATE_TABLE);
 
+        this.getWritableDatabase();
+
+
+        ContentValues values1 = new ContentValues();
+        values1.put(KEY_ID, "1");
+        values1.put(KEY_WORD,"WOOD");
+
+        ContentValues values2 = new ContentValues();
+        values2.put(KEY_ID, "2");
+        values2.put(KEY_WORD,"FIRE");
+
+        ContentValues values3 = new ContentValues();
+        values3.put(KEY_ID, "3");
+        values3.put(KEY_WORD,"WORD");
+
+
+        ContentValues values4 = new ContentValues();
+        values4.put(KEY_ID, "4");
+        values4.put(KEY_WORD,"DOOR");
+
+        ContentValues values5 = new ContentValues();
+        values5.put(KEY_ID, "5");
+        values5.put(KEY_WORD,"MADE");
+
+
+
 
     }
-    public ArrayList<Round> Insert(){
-        ArrayList<Round> roundArrayList=new ArrayList<Round>();
 
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-
-
-    }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -64,6 +82,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return roundArrayList;
     }
+
+    // Gets the data repository in write mode
 
 
 }
